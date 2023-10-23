@@ -9,7 +9,6 @@ const TicTacToe = () => {
   const [value, setValue] = useState(Array(9).fill(""));
   const [win, setWin] = useState(null);
   const [count, setCount] = useState(0);
-
   useEffect(() => {
     winner();
   }, [value]);
